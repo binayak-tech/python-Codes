@@ -1,3 +1,4 @@
+# using loops
 def reverseArray(arr):
     start, end = 0, len(arr)
     while start < end:
@@ -6,12 +7,12 @@ def reverseArray(arr):
         end -= 1
     return arr
     
-    
+# using list slicing 
 def reverseList(arr):
     rev = arr[::-1]
     return rev
 
-
+# using recursion
 def reverseArrayRecursive(arr, start, end):
     if start >= end: return
     arr[start], arr[end] = arr[end], arr[start]
