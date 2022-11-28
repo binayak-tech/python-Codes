@@ -7,7 +7,7 @@
 def commonPrefix(strs):
     result = ""
     for i in range(len(strs[0])):
-        for ele in strs:
+        for ele in strs[1:]:
             
             # first checking for out of bound condition because different words can have different length 
             if i == len(ele) or ele[i] != strs[0][i]:
