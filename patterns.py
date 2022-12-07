@@ -1,3 +1,5 @@
+# GFG PATTERN QUESTION ANSWERS FROM 1 TO 18
+
 def pattern1(n):
     for i in range(n):
         print('* ' * n)
@@ -38,7 +40,7 @@ def pattern7(n):
     while i <= n:
         spaces = n - i
         print(" " * spaces, end='')
-        print("* " * j)
+        print("*" * j)
         j += 2
         i += 1
 
@@ -48,7 +50,7 @@ def pattern8(n):
     while i > 0:
         spaces = n - i
         print(" " * spaces, end='')
-        print("* " * j)
+        print("*" * j)
         j -= 2
         i -= 1
 
@@ -119,7 +121,27 @@ def pattern16(n):
     char = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     for i in range(n):
         print(char[i]*(i+1))
+        
+def pattern17(n):
+    char = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for i in range(1,n+1):
+        spaces = n - i
+        print(" "*spaces, end="")
+        for j in range(i):
+            print(char[j], end="")
+        if i > 1:
+            for k in range(i-2,-1,-1):
+                print(char[k], end="")
+        print()
+            
+            
+def pattern18(n):
+    char = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for i in range(i,n+1):
+        for j in range(i):
+            print(char[N-j-1], end=" ")
+        print()
 
 
 
-pattern16(5)
+pattern18(5)
