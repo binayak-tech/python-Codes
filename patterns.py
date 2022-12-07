@@ -87,9 +87,15 @@ def pattern11(n):
 
 def pattern12(n):
     for i in range(1, n+1):
-        print(i, end=" ")
-        
-
+        for j in range(1, i+1):
+            print(j, end=" ")
+        spaces = (n*2)-(i*2)
+        print("  "*spaces, end="")
+        for k in range(i,0,-1):
+            print(k, end=" ")
+        print()
+            
+      
 def pattern13(n):
     out = 1
     for i in range(1,n+1):
