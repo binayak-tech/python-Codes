@@ -143,5 +143,60 @@ def pattern18(n):
         print()
 
 
+def pattern19(n):
+    spaces = 0
+    for i in range(1,n+1):
+        for j in range(1,n-i+2):
+            print("*",end="")
+        print(" "*spaces, end="")
+        spaces += 2
+        for j in range(1,n-i+2):
+            print("*",end="")
+        print()
+    spaces = (n*2) - 2
+    for i in range(1,n+1):
+        for j in range(i):
+            print("*",end="")
+        print(" "*spaces, end="")
+        spaces -= 2
+        for j in range(i):
+            print("*",end="")
+        print()
+    
+            
+        
+def pattern20(n):
+    spaces = (n*2) - 2
+    for i in range(1,n+1):
+        for j in range(i):
+            print("*",end="")
+        print(" "*spaces, end="")
+        spaces -= 2
+        for j in range(i):
+            print("*",end="")
+        print()
+    spaces = 2
+    n = n-1
+    for i in range(1,n+1):
+        for j in range(1,n-i+2):
+            print("*",end="")
+        print(" "*spaces, end="")
+        spaces += 2
+        for j in range(1,n-i+2):
+            print("*",end="")
+        print()
 
-pattern18(5)
+
+def pattern21(n):
+    for i in range(1,n+1):
+        if i == 1 or i == n:
+            print("*"*n)
+        else:
+            print("*", end="")
+            spaces = n - 2
+            print(" "*spaces, end="")
+            print("*")
+
+
+
+pattern21(5)
